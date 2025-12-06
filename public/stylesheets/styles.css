@@ -1,0 +1,30 @@
+.transaction_alert {
+  position: fixed;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #1F7D53;
+  /* verde principal */
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+  opacity: 0;
+  transition: all 0.8s ease;
+  z-index: 9999;
+}
+
+.transaction_alert.show {
+  top: 30px;
+  opacity: 1;
+}
+
+#dropZone.drag-over {
+  background-color: #198754;
+  color: #fff;
+}
+
+.toast-container {
+  z-index: 1055;
+}

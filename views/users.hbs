@@ -1,0 +1,19 @@
+<title>Familia</title>
+<h1 class="text-light">Nuestros usuarios</h1>
+<table class="table table-dark table-striped table-hover align-middle">
+  <thead>
+    <tr>
+      <th>Usuario</th>
+      <th>Cantidad de Transacciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each users}}
+      <tr>
+        <td>{{username}}</td>
+        <td>{{transacciones}}</td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>
+

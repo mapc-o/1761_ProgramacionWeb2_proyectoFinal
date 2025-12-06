@@ -1,0 +1,19 @@
+<div class="d-flex justify-content-center">
+    <form action="/consultar" method="post" class="bg-dark text-light p-4 rounded shadow w-50">
+
+    <h2 class="mb-4 text-success text-center">Consultar acciones</h2>
+
+    <div class="mb-3">
+      <label for="symbol" class="form-label">Ticker</label>
+      <input type="text" class="form-control bg-secondary text-light border-0" id="symbol" name="symbol" placeholder="Ingresa un ticker" autocomplete="off">
+    </div>
+    <button type="submit" class="btn btn-success w-100 fw-bold">Vender</button>
+
+    {{#if error}}
+      <div class="alert alert-danger mt-3" role="alert">
+        {{error}}
+      </div>
+    {{/if}}
+    
+  </form>
+</div>

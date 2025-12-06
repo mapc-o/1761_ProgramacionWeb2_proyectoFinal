@@ -1,0 +1,24 @@
+<div class="d-flex justify-content-center">
+    <form action="/login" method="post" class="bg-dark text-light p-4 rounded shadow w-50">
+
+    <h2 class="mb-4 text-success text-center">Iniciar Sesión</h2>
+
+    <div class="mb-3">
+      <label for="username" class="form-label">Nombre de usuario</label>
+      <input type="text" 
+             class="form-control bg-secondary text-light border-0" id="username" name="username" autofocus placeholder="Ingresa tu nombre de usuario" autocomplete="off">
+    </div>
+    <div class="mb-3">
+      <label for="password" class="form-label">Contraseña</label>
+      <input type="password" class="form-control bg-secondary text-light border-0" id="password" name="password" autofocus placeholder="Ingresa tu contraseña" autocomplete="off">
+    </div>
+
+    <button type="submit" class="btn btn-success">Iniciar Sesión</button>
+
+    {{#if error}}
+      <div class="alert alert-danger mt-3" role="alert">
+        {{error}}
+      </div>
+    {{/if}}
+  </form>
+</div>
